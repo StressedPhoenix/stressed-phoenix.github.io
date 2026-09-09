@@ -4,9 +4,9 @@ Source for my GitHub Pages portfolio.
 
 ## Structure
 
-- `index.html` — page markup and content
-- `style.css` — styling
-- `_config.yml` — GitHub Pages / Jekyll config
+- `index.html` ->page markup and content
+- `style.css` -> styling
+- `_config.yml` -> GitHub Pages / Jekyll config
 
 ## Editing
 
