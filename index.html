@@ -3,53 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wout – Portfolio</title>
+  <title>Wout — Developer &amp; Game Programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Wout</h1>
-    <p class="subtitle">Developer • Game Programmer • Creator</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="https://github.com/stressed-phoenix" target="_blank">GitHub</a>
-  </nav>
+  <div class="frame">
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Short intro goes here. You can update this tomorrow — this is just placeholder text.
-      </p>
-    </section>
+    <header class="hero">
+      <nav class="hero-nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/stressed-phoenix" target="_blank" rel="noopener">GitHub</a>
+      </nav>
 
-    <section id="projects">
-      <h2>Projects</h2>
+      <h1 class="hero-name">Wout</h1>
+      <p class="hero-role">Developer, building games and the tools that make them.</p>
 
-      <div class="project-card">
-        <h3>Project Name</h3>
-        <p>Small description of the project.</p>
-        <a href="https://github.com/stressed-phoenix/your-repo" target="_blank">
-          View on GitHub →
-        </a>
-      </div>
+      <dl class="hero-stats">
+        <div class="stat">
+          <dt>Focus</dt>
+          <dd>Gameplay &amp; tools programming</dd>
+        </div>
+        <div class="stat">
+          <dt>Based</dt>
+          <dd>Antwerp / Kortrijk</dd>
+        </div>
+        <div class="stat">
+          <dt>Status</dt>
+          <dd>Open to collaborations</dd>
+        </div>
+      </dl>
+    </header>
 
-      <div class="project-card">
-        <h3>Another Project</h3>
-        <p>Another placeholder description.</p>
-        <a href="https://github.com/stressed-phoenix/another-repo" target="_blank">
-          View on GitHub →
-        </a>
-      </div>
-    </section>
-  </main>
+    <main>
 
-  <footer>
-    <p>© 2026 Wout — Built with GitHub Pages</p>
-  </footer>
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p>
+          Replace this with two or three sentences on what you build and why —
+          the language you reach for first, the kind of games or tools that
+          got you into this, what you're trying to get better at right now.
+          Specific beats impressive.
+        </p>
+      </section>
+
+      <section id="work" class="work">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <span class="section-note">Selected work, in progress and shipped</span>
+        </div>
+
+        <ol class="level-list">
+
+          <li class="level">
+            <span class="level-index">LVL 01</span>
+            <div class="level-body">
+              <h3>Project Name</h3>
+              <p>One line on what it does and what problem it solves.</p>
+              <ul class="tags">
+                <li>C++</li>
+                <li>Engine</li>
+              </ul>
+            </div>
+            <a class="level-link" href="https://github.com/stressed-phoenix/your-repo" target="_blank" rel="noopener">
+              Repo
+            </a>
+          </li>
+
+          <li class="level">
+            <span class="level-index">LVL 02</span>
+            <div class="level-body">
+              <h3>Another Project</h3>
+              <p>One line on what it does and what problem it solves.</p>
+              <ul class="tags">
+                <li>Unity</li>
+                <li>Tools</li>
+              </ul>
+            </div>
+            <a class="level-link" href="https://github.com/stressed-phoenix/another-repo" target="_blank" rel="noopener">
+              Repo
+            </a>
+          </li>
+
+          <li class="level level--add">
+            <span class="level-index">LVL 03</span>
+            <div class="level-body">
+              <h3>Next project goes here</h3>
+              <p>Duplicate a &lt;li class="level"&gt; block above to add more.</p>
+            </div>
+          </li>
+
+        </ol>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Wout — built with GitHub Pages</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
