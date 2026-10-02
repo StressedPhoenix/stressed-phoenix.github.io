@@ -6,139 +6,276 @@
   <title>Wout Claes, GameDev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="Pictures/Phoenix.jpg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="backdrop" aria-hidden="true"></div>
+
   <div class="frame">
 
     <header class="hero">
-      <nav class="hero-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </nav>
+      <div>
+        <nav class="hero-nav">
+          <img class="logo" src="Pictures/stressedphoenix.jpg" alt="StressedPhoenix avatar">
+          <a href="#projects">Projects</a>
+          <a href="#games">Games I love</a>
+          <a href="#offscreen">Off-screen</a>
+          <a href="#about">About</a>
+        </nav>
 
-      <h1 class="hero-name">Wout Claes</h1>
-      <p class="hero-role">Developer, building games and the tools that make them.</p>
+        <h1 class="hero-name">Wout Claes</h1>
+        <p class="hero-role">Developer, building games and the tools that make them.</p>
 
-      <dl class="hero-stats">
-        <div class="stat">
-          <dt>Focus</dt>
-          <dd>Build pipeline &amp; engine development</dd>
-        </div>
-        <div class="stat">
-          <dt>Based</dt>
-          <dd>Kortrijk</dd>
-        </div>
-        <div class="stat">
-          <dt>Status</dt>
-          <dd>Looking for an internship</dd>
-        </div>
-      </dl>
+        <ul class="hero-links">
+          <li><a href="https://github.com/StressedPhoenix" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/wout-claes/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://stressedphoenix.itch.io/" target="_blank" rel="noopener">Itch</a></li>
+          <li><a href="Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </div>
 
-      <ul class="hero-links">
-        <li><a href="https://github.com/StressedPhoenix" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/wout-claes/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://stressedphoenix.itch.io/" target="_blank" rel="noopener">Itch</a></li>
-        <li><a href="Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
-      </ul>
+      <aside class="player-card" aria-label="Quick facts">
+        <img class="avatar" src="Pictures/stressedphoenix.jpg" alt="StressedPhoenix avatar">
+        <div class="ph portrait" data-label="Add assets/me.jpg">
+          <img src="Pictures/me.jpg" alt="Wout Claes">
+        </div>
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>Focus</dt>
+            <dd>Build pipeline &amp; engine development</dd>
+          </div>
+          <div class="stat">
+            <dt>Based</dt>
+            <dd>Kortrijk</dd>
+          </div>
+          <div class="stat status">
+            <dt>Status</dt>
+            <dd>Looking for an internship</dd>
+          </div>
+        </dl>
+      </aside>
     </header>
 
     <main>
 
-      <section id="about" class="about">
-        <h2>About</h2>
-        <p>
-          I am an up-and-coming ambitious game developer. 
-          Currently I am studying at one of the top schools in the world to become a programmer in the gaming industry. 
-          I can learn and pick up on thing quickly and I am an avid worker.
-        </p>
-      </section>
-
       <section id="projects" class="projects">
         <div class="section-head">
           <h2>Projects</h2>
+          <p>Games and tools I've built, from game camp to my own engine work.</p>
         </div>
 
         <ol class="level-list">
 
           <li class="level">
-            <span class="level-index">LVL 01</span>
+            <div class="ph media" data-label="Add assets/booms-n-brooms.jpg">
+              <img src="Pictures/BoomsNBrooms.png" alt="Screenshot of Booms N Brooms">
+              <a class="play" href="https://www.youtube.com/watch?v=pDCKLGi1eQQ" target="_blank" rel="noopener" aria-label="Play the Booms N Brooms trailer">Play trailer</a>
+            </div>
             <div class="level-body">
-              <h3>Booms N Brooms</h3>
-              <p>XBox game camp game</p>
+              <span class="level-index">LVL 01</span>
+              <h3>Booms 'N Brooms</h3>
+              <p>Xbox game camp game.</p>
+              <p>2.0 version currently in development!</p>
               <ul class="tags">
                 <li>C++</li>
                 <li>Unity</li>
               </ul>
             </div>
-            <a class="level-link" href="https://mathispfaff.itch.io/boomsnbrooms" target="_blank" rel="noopener">
-              Itch
-            </a>
+            <a class="level-link" href="https://mathispfaff.itch.io/boomsnbrooms" target="_blank" rel="noopener">Play on Itch</a>
           </li>
 
           <li class="level">
-            <span class="level-index">LVL 02</span>
+            <div class="ph media" data-label="Add assets/soup-bound.jpg">
+              <img src="Pictures/SoupBound.jpg" alt="Screenshot of Soup Bound">
+              <a class="play" href="https://youtu.be/qwhpY4mcjq0?si=70w3N1ry-rnoSMGN" target="_blank" rel="noopener" aria-label="Play the soupbound trailer">Play trailer</a>
+            </div>
             <div class="level-body">
+              <span class="level-index">LVL 02</span>
               <h3>Soup Bound</h3>
-              <p>Grapics programming assignment</p>
+              <p>A school group project where we (finally) got to work on a unique game.</p>
               <ul class="tags">
                 <li>C++</li>
-                <li>Custom</li>
+                <li>Unreal</li>
               </ul>
             </div>
-            <a class="level-link" href="https://kap00t.itch.io/soupbound" target="_blank" rel="noopener">
-              Itch
-            </a>
+            <a class="level-link" href="https://kap00t.itch.io/soupbound" target="_blank" rel="noopener">Play on Itch</a>
           </li>
 
           <li class="level">
-            <span class="level-index">LVL 03</span>
+            <div class="ph media" data-label="Add assets/qbert.jpg">
+              <img src="Pictures/qbert.jpg" alt="Screenshot of Q*bert in a custom engine">
+            </div>
             <div class="level-body">
+              <span class="level-index">LVL 03</span>
               <h3>Q*bert in custom engine</h3>
-              <p>Programming assignment</p>
+              <p>Programming assignment where we created a personal engine using SDL.</p>
               <ul class="tags">
                 <li>C++</li>
                 <li>Custom</li>
               </ul>
             </div>
-            <a class="level-link" href="https://github.com/WoutClaes/Prog4Project" target="_blank" rel="noopener">
-              Repo
-            </a>
+            <a class="level-link" href="https://github.com/WoutClaes/Prog4Project" target="_blank" rel="noopener">View repo</a>
           </li>
 
           <li class="level">
-            <span class="level-index">LVL 04</span>
+            <div class="ph media" data-label="Add assets/megaman.jpg">
+              <img src="Pictures/MegamanX.jpg" alt="Screenshot of Megaman in a provided engine">
+            </div>
             <div class="level-body">
+              <span class="level-index">LVL 04</span>
               <h3>Megaman in a provided engine</h3>
-              <p>Programming assignment</p>
+              <p>Programming assignment. [One line on what you built.]</p>
               <ul class="tags">
                 <li>C++</li>
                 <li>Custom</li>
               </ul>
             </div>
-            <a class="level-link" href="https://github.com/StressedPhoenix/Megaman" target="_blank" rel="noopener">
-              Repo
-            </a>
+            <a class="level-link" href="https://github.com/StressedPhoenix/Megaman" target="_blank" rel="noopener">View repo</a>
           </li>
 
           <li class="level">
-            <span class="level-index">LVL 05</span>
+            <div class="ph media" data-label="Add assets/renderer.jpg">
+              <img src="Pictures/DualRasterizer.png" alt="Screenshot of the dual renderer">
+            </div>
             <div class="level-body">
+              <span class="level-index">LVL 05</span>
               <h3>Dual renderer</h3>
-              <p>Grapics programming assignment</p>
+              <p>Graphics programming assignment. [Which two renderers/APIs?]</p>
               <ul class="tags">
                 <li>C++</li>
                 <li>Custom</li>
               </ul>
             </div>
-            <a class="level-link" href="https://github.com/StressedPhoenix/Renderer" target="_blank" rel="noopener">
-              Repo
-            </a>
+            <a class="level-link" href="https://github.com/StressedPhoenix/Renderer" target="_blank" rel="noopener">View repo</a>
           </li>
 
         </ol>
+      </section>
+
+      <section id="games" class="games">
+        <div class="section-head">
+          <h2>What I look for in a game</h2>
+          <p>The things I keep coming back to, and the games that do them best.</p>
+        </div>
+
+        <div class="pillars">
+          <div class="pillar">
+            <h3>Self identity</h3>
+            <p>A game that is unapologetically itself. Games like: Outerwilds, GTFO, Titanfall, Armored core 6, Frostpunk.</p>
+          </div>
+          <div class="pillar">
+            <h3>Meaningful Mastery</h3>
+            <p>Players grow through skillful play, not artificial progression. Games like: Elden ring, Black myth Wukong.</p>
+          </div>
+          <div class="pillar">
+            <h3>Elegant Complexity</h3>
+            <p>Depth emerges from the interaction of simple, well-defined mechanics. Games like: Satisfactory, Balatro, Doom.</p>
+          </div>
+        </div>
+
+        <h3 class="shelf-title">My all-time favourites</h3>
+        <ul class="shelf">
+          <li class="game">
+            <div class="ph cover" data-label="Add assets/game-1.jpg"><img src="Pictures/Titanfall.jpg" alt="[Game 1] cover art"></div>
+            <h3>Titanfall 2</h3>
+            <p>Fast and constant fun in 20 minute bursts. Just long enough.</p>
+          </li>
+          <li class="game">
+            <div class="ph cover" data-label="Add assets/game-2.jpg"><img src="Pictures/Doom.png" alt="[Game 2] cover art"></div>
+            <h3>Doom Eternal</h3>
+            <p>Fast, bloody and engaging. What more could you want?</p>
+          </li>
+          <li class="game">
+            <div class="ph cover" data-label="Add assets/game-3.jpg"><img src="Pictures/GTFO.jpg" alt="[Game 3] cover art"></div>
+            <h3>GTFO</h3>
+            <p>Brutal but rewarding the multiplayer update.</p>
+          </li>
+          <li class="game">
+            <div class="ph cover" data-label="Add assets/game-4.jpg"><img src="Pictures/Outerwilds.jpg" alt="[Game 4] cover art"></div>
+            <h3>Outerwilds</h3>
+            <p>The best game you can never play again.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="offscreen" class="offscreen">
+        <div class="section-head">
+          <h2>Off-screen</h2>
+          <p>What I do when I'm not building games.</p>
+        </div>
+
+        <div class="hobbies">
+          <article class="hobby">
+            <div class="ph" data-label="Add assets/motorcycle.jpg"><img src="Pictures/Bike.jpg" alt="Wout on his motorcycle"></div>
+            <div class="text">
+              <h3>Motorcycling</h3>
+              <p>My CBR500R, my most valued possession.</p>
+            </div>
+          </article>
+          <article class="hobby">
+            <div class="ph" data-label="Add assets/saxophone.jpg"><img src="Pictures/saxophone.jpg" alt="Wout playing tenor saxophone"></div>
+            <div class="text">
+              <h3>Tenor saxophone</h3>
+              <p>Nine years at the music academy. It's been a while but I still got what it takes.</p>
+            </div>
+          </article>
+          <article class="hobby">
+            <div class="ph" data-label="Add assets/hobby-3.jpg"><img src="Pictures/Warhammer.jpg" alt="[Hobby]"></div>
+            <div class="text">
+              <h3>Warhammer 40K</h3>
+              <p>One day I gave in and I never looked back.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery">
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-1.jpg"><img src="Pictures/XboxGameCamp.jpg" alt="Game jam"></div>
+            <figcaption>Xbox game camp 2026</figcaption>
+          </figure>
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-2.jpg"><img src="Pictures/CustomHelmet.jpg" alt="Game jam team"></div>
+            <figcaption>Making my own custom motorcycle helmet</figcaption>
+          </figure>
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-3.jpg"><img src="Pictures/WinningMario.jpg" alt="Gaming setup"></div>
+            <figcaption>Teaching my uncle a lesson in Mario Cart (I lost)</figcaption>
+          </figure>
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-4.jpg"><img src="Pictures/BikeLooking.jpg" alt="On the road"></div>
+            <figcaption>Showing of the custom bike suit.</figcaption>
+          </figure>
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-5.jpg"><img src="Pictures/Setup.jpg" alt="Gaming gear"></div>
+            <figcaption>My setup when the power went out</figcaption>
+          </figure>
+          <figure>
+            <div class="ph" data-label="Add assets/gallery-6.jpg"><img src="Pictures/Ski.jpg" alt="Game jam"></div>
+            <figcaption>Skiing as beer during "rosenmontag"</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+        <div class="about-inner">
+          <img class="avatar-big" src="Pictures/stressedphoenix.jpg" alt="StressedPhoenix avatar">
+          <div>
+            <p>
+              I'm an ambitious, up-and-coming game developer, currently studying at Howest Digital Arts and Entertainment to work in the games industry.
+              I pick things up quickly and I like to work hard.
+            </p>
+            <p>
+              Online I go by StressedPhoenix.
+              I post about my current projects on <a href="https://www.linkedin.com/in/wout-claes/" target="_blank" rel="noopener">LinkedIn</a>, and my full background is on my <a href="Resume.pdf" target="_blank" rel="noopener">resume</a>.
+            </p>
+          </div>
+        </div>
       </section>
 
     </main>
@@ -148,6 +285,15 @@
     </footer>
 
   </div>
+
+<script>
+  // Show the striped placeholder when an image file doesn't exist yet.
+  document.querySelectorAll('.ph img').forEach(function (img) {
+    var hide = function () { img.classList.add('missing'); };
+    img.addEventListener('error', hide);
+    if (img.complete && img.naturalWidth === 0) hide();
+  });
+</script>
 
 </body>
 </html>
