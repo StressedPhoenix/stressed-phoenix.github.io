@@ -244,27 +244,45 @@ section { margin-bottom: 5rem; }
 }
 .level-link:hover { background: var(--gold); }
 
-/* ---------- What I look for ---------- */
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.pillar { border: var(--line); border-radius: var(--radius); padding: 1.4rem; background: var(--surface); }
-.pillar:nth-child(1) { background: var(--maroon); }
-.pillar:nth-child(2) { background: var(--navy); }
-.pillar:nth-child(3) { background: #5c2410; }
-.pillar h3 { font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--gold); }
-.pillar p { margin: 0; }
+/* ---------- Featured project ---------- */
+.level.featured {
+  grid-column: 1 / -1;               /* span both columns = 2x wide */
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+.level.featured .media {
+  grid-row: 1 / 3;                   /* media runs the full height of the card */
+  aspect-ratio: auto;
+  min-height: 380px;
+  border-bottom: 0;
+  border-right: var(--line);
+}
+.level.featured .level-body { padding: 1.8rem 1.8rem 0.4rem; }
+.level.featured h3 { font-size: 2.4rem; }
+.level.featured .level-link { margin: 0 1.8rem 1.8rem; }
 
-/* ---------- Favourite games shelf ---------- */
-.shelf-title { margin: 3rem 0 1.5rem; font-size: 1.6rem; }
-.shelf { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-.game .cover {
-  aspect-ratio: 3 / 4;
+/* framed Xbox image */
+.badge-shot {
+  margin: 1.2rem 0;
   border: var(--line);
   border-radius: 10px;
-  box-shadow: 4px 4px 0 var(--ember);
-  margin-bottom: 0.8rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 var(--ember);
 }
-.game h3 { font-size: 1.15rem; }
-.game p { margin: 0.25rem 0 0; font-size: 0.95rem; color: var(--muted); }
+.badge-shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.badge-shot figcaption {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--black);
+}
 
 /* ---------- Off-screen ---------- */
 .hobbies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
@@ -291,6 +309,8 @@ section { margin-bottom: 5rem; }
   .shelf { grid-template-columns: repeat(2, 1fr); }
   .gallery { grid-template-columns: repeat(2, 1fr); }
   .pillars, .hobbies { grid-template-columns: 1fr; }
+  .level.featured { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .level.featured .media { grid-row: auto; min-height: 0; aspect-ratio: 16 / 9; border-right: 0; border-bottom: var(--line); }
 }
 @media (max-width: 700px) {
   .level-list { grid-template-columns: 1fr; }
